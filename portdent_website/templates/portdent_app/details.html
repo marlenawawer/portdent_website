@@ -1,0 +1,24 @@
+{% extends 'portdent_app/base.html' %}
+{% load static %}
+{% block blody_block %}
+
+<div class="text">
+    <h2>{{ post.title }}</h2>
+    <p>By: {{ post.author}} </p>
+    <p>{{ post.created_at }}</p>
+    
+
+    <hr>
+    <br/>
+
+    {{ post.body|safe }}
+
+    <br/>
+    <br/>
+    <br/>
+    <a href="{% url 'portdent_app:update-post' post.pk %}"><button class="button" type="button">Update</button></a>
+    <a href="{% url 'portdent_app:blog' %}"><button class="button" type="button">Back</button></a>
+
+</div>
+        
+{% endblock %}

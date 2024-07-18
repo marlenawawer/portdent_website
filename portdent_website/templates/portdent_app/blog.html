@@ -1,0 +1,22 @@
+{% extends 'portdent_app/base.html' %}
+{% load static %}
+{% block blody_block %}
+
+<div class="text">
+    <h2>Posts</h2>
+<hr>
+
+<ul>
+    {% for post in post_list %}
+
+    <li> <article class="posttitle">{{ post.title }} </article>
+    <a class="readmore" href ="{% url 'portdent_app:post-detail' post.pk %}" >- Click to read more -</a><br/>
+    <img class="coverphoto" src="{{ post.cover_pic.url }}"><br/>
+    <br/></li>
+
+    {% endfor %}
+</ul>
+
+</div>
+        
+{% endblock %}

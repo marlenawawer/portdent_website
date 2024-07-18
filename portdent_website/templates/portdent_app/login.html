@@ -1,0 +1,22 @@
+{% extends 'portdent_app/base.html' %}
+{% block blody_block %}
+
+<div class="text">
+    
+    <h2>Please Login</h2>
+
+    <form action="{% url 'portdent_app:user_login' %}" method="POST">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Enter Username">
+        <p></p>
+        <label for="password">Password:</label>
+        <input type="password" name="username">
+        <p></p>
+        
+        <button class="button" type="submit">Login</button>
+
+    </form>
+</div>
+        
+{% endblock %}

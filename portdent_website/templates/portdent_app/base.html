@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <title>Port-Dent Dental Clinic</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+      <div id="container">
+  
+      <script type="text/javascript" src="{% static 'js/myjavascript.js' %}"></script>   
+      
+        <header>
+        <div class="logo">
+            <a><img class = "logo" src="{% static 'images/logo.png' %}" alt="Gabinet Stomatologiczny Port-Dent"></a>
+        </div>
+        <nav id="main-menu" class="navbar">
+                <ul class="nav">
+                        <li><a href="{% url 'index' %}">Start</a></li>
+                        <li><a href="{% url 'portdent_app:blog' %}">Blog</a></li>
+                        <li><a href="{% url 'portdent_app:contact' %}">Contact</a></li>
+                        
+                        <li><a href="{% url 'portdent_app:addpost' %}">Add Post</a></li>
+                        
+                </ul>
+         </nav>
+         
+  <input type="checkbox" id="hamburger-input" class="burger-shower" />
+  <label id="hamburger-menu" for="hamburger-input">
+  <nav id="sidebar-menu">
+    <ul>
+      <li><a href="{% url 'index' %}">Start</a>
+      <li><a href="{% url 'portdent_app:blog' %}">Blog</a></li>
+      <li><a href="{% url 'portdent_app:contact' %}">Contact</a></li>
+      
+      <li><a href="{% url 'portdent_app:addpost' %}">Add Post</a></li>
+    
+    </ul>
+  </nav>
+</label>
+</header>
+
+<!-- <div class="overlay"></div> -->
+
+
+        {% block blody_block %}
+        {% endblock %}
+
+      
+  <footer>
+    <p>Port-Dent Dental Clinic</p>
+    <p>ul. Plac Defilad 1 Warsaw</p>
+  </footer>
+</div>
+
+  </body>
+</html>

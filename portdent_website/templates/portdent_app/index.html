@@ -1,0 +1,28 @@
+{% extends 'portdent_app/base.html' %}
+{% load static %}
+{% block blody_block %}
+
+
+
+<div class="slider-content">
+    <img class="mySlides" src="{% static 'images/firstslide.png' %}">
+    <img class="mySlides" src="{% static 'images/secondslide.png' %}">
+    <img class="mySlides" src="{% static 'images/thirdslide.png' %}">
+   
+    <script type="text/javascript" src="{% static 'js/myjavascript.js' %}"></script>
+</div>
+<div class="text">
+<p>
+<strong> Port-Dent </strong> is a dental clinik which will take care of you and your teeth.
+</p>
+
+<p>We will find a way how to help you and present you all possible ways how to solve your problem.</p>
+<p>To provide you with the best treatemet effects we only use products from prestigious suppliers.
+</p>
+
+<a href="{% url 'portdent_app:contact' %}"><button class="button" type="button">Here you find a contact to us</button></a>
+</div>
+
+
+        
+{% endblock %}
