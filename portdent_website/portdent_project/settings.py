@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-$d38y^^aen#o+1xm2v9&n32(5e79%y*3%8@eowt!f7msdjd(hl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['marlenawawer.pythonanywhere.com']
+ALLOWED_HOSTS = ['marlena263.pythonanywhere.com']
 # EMAIL_HOST = 'smtp.poczta.onet.pl'
 # EMAIL_PORT = 465
 # EMAIL_HOST_USER = 'django_emails@op.pl'
