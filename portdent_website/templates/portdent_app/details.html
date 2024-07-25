@@ -2,16 +2,17 @@
 {% load static %}
 {% block blody_block %}
 
-<div class="text">
-    <h2>{{ post.title }}</h2>
-    <p>By: {{ post.author}} </p>
-    <p>{{ post.created_at }}</p>
+<div class="post-body">
+    <h2 class="posttitle">{{ post.title }}</h2>
+    <p class="post-author">By: {{ post.author }}</p>
+    <p class="post-date">{{ post.created_at|date:"F j, Y" }}</p>
     
 
     <hr>
     <br/>
 
-    {{ post.body|safe }}
+        {{ post.body|safe }}
+
 
     <br/>
     <br/>

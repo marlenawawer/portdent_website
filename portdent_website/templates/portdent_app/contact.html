@@ -30,7 +30,7 @@
     <div class="row">
         <div class="column">
             <strong>Our location:</strong>
-            <p>ul. Palc Defilad 1 Warszawa</p>
+            <p>ul. Palc Defilad 1 Warsaw</p>
         </div>
         <div class="column">
             <strong>Opening hours:</strong>
@@ -40,7 +40,6 @@
     </div>
 
     <div class="linkholder">
-        We are here
         <div id="map"></div>
         <script
             src="https://maps.googleapis.com/maps/api/js?key={{key}}&callback=initMap&v=weekly"
@@ -49,13 +48,14 @@
     </div>
       
 
-<h3>Contact us</h3>
-<form method="POST">
-    {{form.as_p}}
-
-    <button class="button" type="submit">Send</button>
-    {% csrf_token %}
-</form>
+<div class="contact-form-container">
+    <h3>Contact us</h3>
+    <form method="POST">
+        {{ form.as_p }}
+        <button class="button" type="submit">Send</button>
+        {% csrf_token %}
+    </form>
+</div>
 
 </div>
 

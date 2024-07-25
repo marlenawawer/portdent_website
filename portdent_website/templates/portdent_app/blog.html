@@ -4,15 +4,17 @@
 
 <div class="text">
     <h2>Posts</h2>
-    <hr>
 
     <div class="posts-container">
         {% for post in post_list %}
         <div class="post-item">
-            <article class="posttitle">{{ post.title }}</article>
-            <a class="readmore" href="{% url 'portdent_app:post-detail' post.pk %}">- Click to read more -</a><br/>
-            <img class="coverphoto" src="{{ post.cover_pic.url }}"><br/>
-            <br/>
+            <a class="post-link" href="{% url 'portdent_app:post-detail' post.pk %}">
+                <img class="coverphoto" src="{{ post.cover_pic.url }}">
+                <div class="post-details">
+                    <p class="post-date">{{ post.created_at|date:"F j, Y" }}</p>
+                    <article class="posttitle">{{ post.title }}</article>
+                </div>
+            </a>
         </div>
         {% endfor %}
     </div>

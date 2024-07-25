@@ -1,7 +1,7 @@
 {% extends 'portdent_app/base.html' %}
 {% block blody_block %}
 
-<div class="textform">
+<div class="form-container">
 
     <h2>Add Post</h2><br/>
     <form method="POST" enctype="multipart/form-data">
@@ -10,7 +10,6 @@
         <button class="button" type="submit">Post</button>
         {% csrf_token %}
     </form>
-
 
 </div>
 
