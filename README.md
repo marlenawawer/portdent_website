@@ -1,5 +1,15 @@
 Web address: https://marlena263.pythonanywhere.com/
+
 NOTE: The purpose of this website was to focus on the backend, not the frontend. The frontend needs improvement, and I will try to amend it in time.
+
+![web](https://github.com/user-attachments/assets/7cc921a6-e5a3-434c-a709-0456af2b5496)
+
+![web4](https://github.com/user-attachments/assets/325324b2-362e-46d9-a708-34cdd6e70c6c)
+
+![web3](https://github.com/user-attachments/assets/a5b8344b-8dfb-4323-9a1d-0aa57f106c3c)
+
+![web2](https://github.com/user-attachments/assets/d0482a77-b272-4f29-bcdc-9668785f49ae)
+
 
 Overview:
 This project is a comprehensive website for a dental clinic, built using Django and hosted on PythonAnywhere. It incorporates features to enhance user interaction and provide essential information about the clinic. Key functionalities include an interactive map to display the clinic's location using the Google Maps API, a user-generated posts section, and a contact form that redirects users to the main page after submission.
